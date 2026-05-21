@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unhas Artísticas e Pedicures Profissionais de Alta Performance. Design exclusivo, durabilidade garantida. Tatiane Unhas - São Paulo.">
+    <meta name="theme-color" content="#e91e63">
+    <title>Tatiane Unhas - Artísticas & Pedicures Premium</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23e91e63'>💅</text></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23e91e63'>💅</text></svg>">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">💅 Tatiane Unhas</div>
+            <ul class="nav-links">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato" class="cta-nav">Agendar</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container-hero">
+            <div class="hero-content">
+                <h1>Unhas Artísticas que Expressam Seu Estilo</h1>
+                <p>Design exclusivo + durabilidade garantida. Transforme suas unhas em arte</p>
+                <div class="hero-ctas">
+                    <button class="btn btn-primary" onclick="scrollToContato()">Agendar Agora</button>
+                    <a href="https://wa.me/5511910526709?text=Olá%20Tatiane!%20Gostaria%20de%20agendar%20um%20serviço%20de%20unhas%20artísticas.%20Qual%20é%20a%20disponibilidade?" class="btn btn-secondary" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+                <div class="trust-signals">
+                    <span>✓ 1.200+ clientes satisfeitos</span>
+                    <span>✓ 5 anos de experiência</span>
+                    <span>✓ 100% satisfação garantida</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x500?text=Unhas+Premium" alt="Unhas Artísticas Premium">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <h2>Por Que Escolher A Gente?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💎</div>
+                    <h3>Durabilidade</h3>
+                    <p>Até 4 semanas sem descascar. Qualidade que dura.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎨</div>
+                    <h3>Personalização</h3>
+                    <p>Designs únicos criados especialmente para você.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Rapidez</h3>
+                    <p>Pronta em 2h. Atendimento expresso disponível.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👑</div>
+                    <h3>Profissionalismo</h3>
+                    <p>Profissionais certificadas com produtos importados.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Saúde</h3>
+                    <p>Tratamento + fortalecimento das unhas naturais.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>Atendimento VIP</h3>
+                    <p>Ambiente climatizado e acolhedor. Seu conforto em 1º lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Manicure Básica</h3>
+                    <div class="price">R$ 45</div>
+                    <ul>
+                        <li>✓ Limpeza e hidratação</li>
+                        <li>✓ Esmaltação</li>
+                        <li>✓ Duração: 1h</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="agendarServico('Manicure Básica')">Agendar</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Manicure Decorada</h3>
+                    <div class="price">R$ 85</div>
+                    <ul>
+                        <li>✓ Design personalizado</li>
+                        <li>✓ Adesivos/strass opcional</li>
+                        <li>✓ Duração: 1h 30min</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="agendarServico('Manicure Decorada')">Agendar</button>
+                </div>
+
+                <div class="service-card highlight">
+                    <span class="badge">MAIS VENDIDO</span>
+                    <h3>Pedicure Premium</h3>
+                    <div class="price">R$ 95</div>
+                    <ul>
+                        <li>✓ Esfoliação e hidratação</li>
+                        <li>✓ Design premium</li>
+                        <li>✓ Duração: 2h</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="agendarServico('Pedicure Premium')">Agendar</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Combo Completo</h3>
+                    <div class="price">R$ 160</div>
+                    <ul>
+                        <li>✓ Manicure + Pedicure</li>
+                        <li>✓ Designs personalizados</li>
+                        <li>✓ Duração: 3h</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="agendarServico('Combo Completo')">Agendar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <h2>Nossa Galeria</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Nail+Design+1')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Nail+Design+2')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Nail+Design+3')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Nail+Design+4')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Nail+Design+5')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Nail+Design+6')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Pedicure+1')"></div>
+                <div class="gallery-item" style="background-image: url('https://via.placeholder.com/300x300?text=Pedicure+2')"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="depoimentos" id="depoimentos">
+        <div class="container">
+            <h2>O Que Nossos Clientes Dizem</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Ficou perfeito! A durabilidade é incrível, recomendo demais!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">M</div>
+                        <div>
+                            <strong>Maria Silva</strong>
+                            <small>Cliente desde 2023</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Melhor escolha que fiz! Ambiente aconchegante e profissionais incríveis."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">J</div>
+                        <div>
+                            <strong>Juliana Costa</strong>
+                            <small>Cliente desde 2022</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Design exclusivo, profissionalismo de primeira. Virei cliente fixa!"</p>
+                    <div class="testimonial-author">
+                        <div class="avatar">A</div>
+                        <div>
+                            <strong>Amanda Oliveira</strong>
+                            <small>Cliente desde 2024</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Quanto tempo as unhas duram?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossas unhas artísticas duram em média 4 semanas sem descascar. Depende do cuidado e do tipo de produto usado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>É necessário marcar com antecedência?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Recomendamos agendamento prévio, mas temos horários disponíveis para atendimento mesmo sem marcação.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Danifica as unhas naturais?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! Usamos técnicas profissionais e produtos de qualidade. Oferecemos tratamento para fortalecer suas unhas naturais.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Qual é o melhor estilo para meu tipo de mão?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossa equipe avaliará seu tipo de mão e sugerirá os melhores estilos e comprimentos para você.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Qual é a garantia?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>100% satisfação garantida! Se não gostou, refazemos grátis nos primeiros 3 dias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Pronto Para Transformar Suas Unhas?</h2>
+            <p>Agende agora e ganhe 10% de desconto no primeiro atendimento</p>
+            <button class="btn btn-primary" onclick="scrollToContato()">Agendar Meu Horário</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <input type="tel" placeholder="Seu Telefone" required>
+                    <select required>
+                        <option value="">Selecione o Serviço</option>
+                        <option value="Manicure Básica">Manicure Básica</option>
+                        <option value="Manicure Decorada">Manicure Decorada</option>
+                        <option value="Pedicure Premium">Pedicure Premium</option>
+                        <option value="Combo Completo">Combo Completo</option>
+                    </select>
+                    <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Informações</h3>
+                    <div class="info-item">
+                        <span>📍</span>
+                        <p>São Paulo - SP</p>
+                    </div>
+                    <div class="info-item">
+                        <span>📞</span>
+                        <p><a href="tel:11910526709">(11) 91052-6709</a></p>
+                    </div>
+                    <div class="info-item">
+                        <span>💬</span>
+                        <p><a href="https://wa.me/5511910526709" target="_blank">WhatsApp: (11) 91052-6709</a></p>
+                    </div>
+                    <div class="info-item">
+                        <span>🕐</span>
+                        <p>Seg-Sáb: 9h-18h | Dom: 10h-16h</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tatiane Unhas. Todos os direitos reservados.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float" title="Clique para falar conosco no WhatsApp">
+        <a href="https://wa.me/5511910526709?text=Olá%20Tatiane!%20Gostaria%20de%20agendar%20um%20serviço%20de%20unhas%20artísticas.%20Qual%20é%20a%20disponibilidade?" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <span class="whatsapp-tooltip">Fale Conosco!</span>
+    </div>
+
+    <!-- Discount Pop-up -->
+    <div class="popup" id="discountPopup">
+        <div class="popup-content">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <h3>🎉 Ganhe 10% OFF!</h3>
+            <p>Seu primeiro agendamento com 10% de desconto</p>
+            <button class="btn btn-primary" onclick="scrollToContato()">Agendar Agora</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
